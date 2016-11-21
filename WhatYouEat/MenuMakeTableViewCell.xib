@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="makemenuCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="makemenuCell" rowHeight="483" id="KGk-i7-Jjw" customClass="MenuMakeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="483"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="482.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="B3V-T0-4yX">
+                        <rect key="frame" x="8" y="188" width="321" height="286.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x4K-p0-vCY">
+                        <rect key="frame" x="8" y="8" width="321" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="bbI-TL-LEI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgp-RV-oFE">
+                        <rect key="frame" x="8" y="8" width="321" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="kWz-5A-ubG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="B3V-T0-4yX" firstAttribute="top" secondItem="Hgp-RV-oFE" secondAttribute="bottom" id="6AV-mT-w5j"/>
+                    <constraint firstItem="B3V-T0-4yX" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="7vm-9O-HwO"/>
+                    <constraint firstItem="x4K-p0-vCY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="CMe-dU-Gpw"/>
+                    <constraint firstItem="Hgp-RV-oFE" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="COc-hj-lZ0"/>
+                    <constraint firstItem="Hgp-RV-oFE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Hle-mq-2hW"/>
+                    <constraint firstItem="x4K-p0-vCY" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="KaW-dc-Y6T"/>
+                    <constraint firstItem="x4K-p0-vCY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="LHW-qV-f65"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="B3V-T0-4yX" secondAttribute="bottom" id="ZIE-V0-aBP"/>
+                    <constraint firstItem="Hgp-RV-oFE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="c4f-4s-JU3"/>
+                    <constraint firstItem="B3V-T0-4yX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="lgS-6g-Z1X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="MenuMakeText" destination="B3V-T0-4yX" id="unE-ec-6c0"/>
+                <outlet property="img" destination="x4K-p0-vCY" id="FHR-zl-2kP"/>
+                <outlet property="nameLabel" destination="Hgp-RV-oFE" id="of5-bX-07i"/>
+            </connections>
+            <point key="canvasLocation" x="254.5" y="415.5"/>
+        </tableViewCell>
+    </objects>
+</document>
